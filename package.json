@@ -1,0 +1,29 @@
+{
+  "name": "saroj-node-app",
+  "version": "1.0.0",
+  "description": "saroj node application",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "elasticsearch": "^14.1.0",
+    "express": "^4.16.2",
+    "guid": "0.0.12",
+    "jsonwebtoken": "^8.1.1",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.0",
+    "rotating-file-stream": "^1.3.4",
+    "sequelize": "^4.33.3",
+    "tedious": "^2.3.1",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "saroj kumar sahoo",
+  "license": "ISC"
+}
