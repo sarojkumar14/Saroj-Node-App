@@ -3,10 +3,12 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 //process.env.NODE_ENV = process.env.NODE_ENV || 'qa';
 //process.env.NODE_ENV = process.env.NODE_ENV || 'uat';
 
-const config = require('./config/config');
-const express = require('./config/express');
+var config = require('./config/config');
+var mongoose = require('./config/mongoose');
+var express = require('./config/express');
 
-const app = express();
+var app = express();
+
 
 app.listen(config.serverConfig.port, () => {
     console.log(`Saroj node server app running at port ${config.serverConfig.port}`);

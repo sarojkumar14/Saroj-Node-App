@@ -19,6 +19,25 @@ router.get('/getAllusers', function (req, res, next) {
             })
         }
     })
-})
+});
+
+router.get('/getUser', function (req, res, next) {
+    userQuery.getUser(function (err, response) {
+        if (err) {
+            return res.status('500').send({
+                IsSuccess: false,
+                Message: "Server error!",
+                Data: null
+            })
+        }
+        else {
+            return res.send({
+                IsSuccess: true,
+                Message: "User details retrived successfully.",
+                Data: response
+            })
+        }
+    })
+});
 
 module.exports = router;
